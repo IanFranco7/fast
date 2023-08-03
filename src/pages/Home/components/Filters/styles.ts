@@ -29,7 +29,7 @@ export const FilterButton = styled.button`
     display: flex;
     align-items: center;
     gap: 0.1rem;
-    width: 7.5rem;
+    width: 8rem;
     justify-content: center;
 `
 
