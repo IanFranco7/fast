@@ -2,7 +2,7 @@ import { useRef, FormEvent } from "react";
 import { FormProducts, InsertContainer, LabelForm, ButtonForm} from "./styles";
 import { Product } from "../../context/ProductsContext";
 import { useProductsContext } from "../../hooks/useProductsContext";
-import { ActionTypes, createNewProductAction } from "../../reducers/products/Actions";
+import { createNewProductAction } from "../../reducers/products/Actions";
 
 
 

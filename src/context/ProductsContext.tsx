@@ -1,7 +1,6 @@
 import { ReactNode, createContext, useState, useReducer} from "react";
 import { initialProducts } from "../data/ProductsData";
 import { productReducer } from "../reducers/products/Reducer";
-import { ProductAction } from "../reducers/products/Actions";
 
 
 interface ProductsContextProviderProps{

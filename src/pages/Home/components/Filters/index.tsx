@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { useProductsContext } from "../../../../hooks/useProductsContext"
 import { FilterButton, FilterContainer, FilterDiv, InsideFilterDiv, InsideP } from "./styles"
+import { CaretDown } from "phosphor-react"
 
 export function Filters(){
     const {setActiveFilter, activeFilter, ChangeFilterType, activeFilterType} = useProductsContext()
@@ -52,7 +53,7 @@ export function Filters(){
     return(
         <FilterContainer>
             <FilterDiv>
-                <FilterButton onClick={() =>OpenCategory()}>Categoria</FilterButton>
+                <FilterButton onClick={() =>OpenCategory()}>Categoria <CaretDown size={16}/></FilterButton>
                 {isCategoryOpen && 
                 <InsideFilterDiv onClick={() => setIsCategoryOpen(false)}>
                     <InsideP 
@@ -79,7 +80,7 @@ export function Filters(){
                 } 
             </FilterDiv>
             <FilterDiv>
-                <FilterButton onClick={() => OpenPrice()}>Preço</FilterButton> 
+                <FilterButton onClick={() => OpenPrice()}>Preço <CaretDown size={16}/></FilterButton> 
                 {isPriceOpen && 
                 <InsideFilterDiv onClick={() => setIsPriceOpen(false)}>
                     <InsideP 
@@ -101,7 +102,7 @@ export function Filters(){
                 } 
             </FilterDiv>
             <FilterDiv>
-                <FilterButton onClick={() => OpenQuantity()}>Quantidade</FilterButton>
+                <FilterButton onClick={() => OpenQuantity()}>Quantidade <CaretDown size={16}/></FilterButton>
                 {isQuantityOpen && 
                 <InsideFilterDiv onClick={() => setIsQuantityOpen(false)}>
                     <InsideP 

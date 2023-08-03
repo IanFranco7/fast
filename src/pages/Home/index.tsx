@@ -1,7 +1,5 @@
-import React, { useState } from "react"
 import { ProductsList } from "./components/ProductsList"
 import { HomeContainer,ProductsContainer,} from "./styles"
-import { FastForwardCircle } from "phosphor-react"
 import { Filters } from "./components/Filters"
 
 export function Home(){

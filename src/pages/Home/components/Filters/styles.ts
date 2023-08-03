@@ -26,6 +26,9 @@ export const FilterButton = styled.button`
     box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
     border: none;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 0.1rem;
 `
 
 export const FilterDiv = styled.div`

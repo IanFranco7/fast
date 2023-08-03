@@ -1,8 +1,5 @@
 import { Product } from "../../context/ProductsContext";
-import { ActionTypes, ProductAction } from "./Actions";
-
-
-
+import { ActionTypes} from "./Actions";
 
 export function productReducer(state: Product[], action: any){
         console.log(state)

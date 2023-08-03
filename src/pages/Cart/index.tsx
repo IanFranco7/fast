@@ -1,16 +1,15 @@
 import { useProductsContext } from "../../hooks/useProductsContext"
-import { CheckoutContainer,  TableContainer, CheckoutProduct, ProductImage, BuyProductsDiv, BuyProductsContainer, BuyButton, TableTh, TableTd, NoProductsDiv } from "./styles"
+import { CheckoutContainer,  TableContainer, ProductImage, BuyProductsDiv, BuyProductsContainer, BuyButton, TableTh, TableTd, NoProductsDiv } from "./styles"
 import { Product } from "../../context/ProductsContext"
 import { useState, useEffect } from "react"
-import { ActionTypes, changeProductQuantityAction, updateProductsAction } from "../../reducers/products/Actions"
+import { changeProductQuantityAction, updateProductsAction } from "../../reducers/products/Actions"
 import { NavLink } from "react-router-dom"
 
 
 export function ChartPage(){
     const [total, setTotal] = useState(0)
 
-    const {products, dispatch, setActiveFilter} = useProductsContext()
-/*PORRA VOU COMEÇAR A MUDAR PEGA A VISAO EM*/
+    const {products, dispatch} = useProductsContext()
     const cartProducts = products.filter((product) => product.isInCart)
 
      function updateProducts(){
