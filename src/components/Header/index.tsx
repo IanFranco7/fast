@@ -16,7 +16,7 @@ export function Header(){
     return(
         <HeaderContainer>
             <div>
-                <Logo>Header</Logo>
+                <Logo>Fast</Logo>
             </div>
             <Links isMobile={isMobile}>
                     <NavLink to='/'>Home</NavLink>

@@ -29,6 +29,8 @@ export const FilterButton = styled.button`
     display: flex;
     align-items: center;
     gap: 0.1rem;
+    width: 7.5rem;
+    justify-content: center;
 `
 
 export const FilterDiv = styled.div`

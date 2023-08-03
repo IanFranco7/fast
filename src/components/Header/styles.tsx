@@ -70,6 +70,12 @@ export const CartIcon = styled.div`
             align-items:center;
             justify-content: center;
             font-size: .85rem;
+
+            @media(max-width: 700px){
+                bottom:33%;
+                left: 50%;
+
+            }
         }
 `
 
